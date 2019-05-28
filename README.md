@@ -1,26 +1,77 @@
-# Git基础
-### 教学目标
-- 学习使用基本git指令对你的项目进行版本控制
-- 学习使用github作为你的项目托管平台
+# 求两个数的余数
 
-### 环境要求
-- Windows系统
-  - 安装git bash: https://gitforwindows.org/
+给定两个数字，求第一个数字除以第二个数字后所得的余数。
+
+例子: 
+
+```
+1. 给定 9 和 4，返回 1
+2. 给定 9 和 3，返回 0
+```
+
+## 参考资料
+
+1. [Javascript基础](http://codefordream.com/courses/js_basic/sections)
+2. [Javascript初级训练营](http://codefordream.com/courses/js_learning_camps/sections)
+3. [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
+4. [npm 下载安装](https://github.com/npm/npm)
+5. [node 下载安装](https://github.com/creationix/nvm)
+6. [jasmine用法](http://jasmine.github.io/2.4/introduction.html)
+7. [Git 参考手册](http://gitref.org/zh/index.html)
 
 
-### 练习描述
-- 创建一个project包含两个分支分别是master和test分支
-- master分支包含master.txt文件（内容不做限制）
-- test分支包含test.txt文件（内容不做限制）
-- 每条分支至少包含两次commit
+## 答题流程
+1. 请用户仔细阅读题目要求和题目描述
+
+2. 请访问下面「提交作业」一栏中的`编程题模板库地址`，再点击右上角的`fork`按钮到自己的仓库。
+
+   ![](http://ocuwjo7n4.bkt.clouddn.com/2018-07-15-WeChatWorkScreenshot_2091b439-1282-4990-9380-9fdb88f6da66.png)
+
+3. 下载仓库到本地。
+
+   ![](http://ocuwjo7n4.bkt.clouddn.com/2018-07-15-WeChatWorkScreenshot_ed14ca41-f4ac-45c7-b5c7-07451a291cac.png)
+
+   - 方法一：在命令行中使用以下命令在用户本地任意目录下clone此题目库
+   ```
+   git clone your_repo_address
+   ```
+   - 方法二：直接下载 ZIP 压缩包到本地，然后解压缩。
+
+   NOTE：如果提示git命令未找到请先阅读参考资料
+
+4. 用任意编辑器打开 clone 或者下载下来的文件夹，内部会存在两个文件夹
+    ```
+    spec  //测试文件夹
+    src   //源文件
+    ```
+    - 阅读spec 文件夹中的测试文件，以了解题目的测试要求。
+    - 在`main.js`文件内输入自己的作业代码
+
+5. 请使用**git提交(commit)**并**上传(push)**，之后将自己github仓库地址:（https://github.com/username/repo） 填入到提交地址一栏 。注意：请输入 `https`开头的地址，而非 `git@github.com`开头的地址
+
+6. 获取分支
+
+7. 提交
+
+8. 等待结果
 
 
-- 在github上注册账户（如果已经有账户的同学，可直接使用你的账户）
-- 在github上创建一个新的仓库
-- 将你本地项目提交到在github创建的仓库中 
 
-### 输出规范
-- 用户本地自行创建一个新的仓库
-- 该仓库内容满足需求条件
-- 使用用户自己的github作为本地仓库的托管平台
-- 提交github的仓库地址
+## 如何本地运行测试，检验自己的代码是否正确
+
+ 阅读 [如何安装 npm 并管理 npm 版本 | npm 中文文档](https://www.npmjs.com.cn/getting-started/installing-node/)
+
+
+1.  打开终端，进入到项目本地地址。
+2. 输入下列指令，使用命令行安装依赖：
+    ```
+    npm install
+    ```
+3. 运行下面指令，执行测试：
+    ```
+    npm test
+    ```
+    如下图，显示 `0 failures`，表示你的作业答案正确
+    ![](http://ocuwjo7n4.bkt.clouddn.com/2018-07-26-083013.png)
+
+可以通过测试来检测本地代码是否完成作业要求，测试通过即可提交到github。把git库地址和分支填到「提交作业」一栏中，并提交作业。
